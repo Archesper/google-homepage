@@ -1,1 +1,1 @@
-# HTML and CSS practice project: **Google Homepage**g
+# HTML and CSS practice project: **Google Homepage**
