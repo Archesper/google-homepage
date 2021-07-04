@@ -1,5 +1,16 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 :root{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+}
+
+body {
+    height: 100vh;
 }
 
 /* Styles for the top nav */
@@ -24,7 +35,6 @@
 }
 .profile-pic:hover {
     box-shadow: 1px 1px 10px 4px rgba(0,0,0,.15);
-    cursor: pointer;
 }
 .apps {
     opacity: 0.4;
@@ -89,6 +99,7 @@
 }
 
 .mic-icon {
+    cursor: pointer;
     width: 25px;
     height: 25px;
 }
@@ -106,9 +117,44 @@
     padding: 0.5rem 0.7rem;
     margin: 1%;
     background-color: #f8f9fa;
+    color: #3c4043;
 }
 
 .button-wrapper button:hover {
     border-color: #dadce0;
+    cursor: pointer;
     box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+/* Styles for the footer */
+footer {
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(242, 242, 242);
+    border: 1px solid #dddddd;
+}
+
+footer a {
+    color: #70757a;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0.1rem 0.3rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/*
+.right-section {
+    justify-self: flex-start;
+}
+
+.left-section {
+    justify-self: flex-end;
 }
